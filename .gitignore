@@ -93,3 +93,5 @@ ENV/
 .ropeproject
 
 .idea
+
+*/.tic_tac_toe_offline
