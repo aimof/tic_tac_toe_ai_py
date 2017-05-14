@@ -2,7 +2,7 @@
 import json
 
 
-class TicTacToe:
+class TicTacToeAI1:
 
     def __init__(self):
         self.lines = [
@@ -43,17 +43,23 @@ class TicTacToe:
                 opponents_check.append(line)
         return my_check, opponents_check
 
+    # return not lost play: [0:9} or defeat: -1
     @staticmethod
-    def search_my_play(self, board):
-        legal_boxes = self.extract_legal_boxes(board)
+    def search_my_play(self, b):
+        legal_boxes = self.extract_legal_boxes(b)
         my_checks = []
         opponents_checks = []
         for _ in self.lines:
-            my_check, opponents_check = self.is_check(board)
+            my_check, opponents_check = self.is_check(b)
             my_checks.append(my_check)
             opponents_checks.append(opponents_check)
+        if len(my_checks) != 0:
+            return self.find_blank_box(b, my_checks[0])
+        if
 
         for box in legal_boxes:
+
+
 
     @staticmethod
     def find_blank_box(b, line):
