@@ -94,4 +94,4 @@ ENV/
 
 .idea
 
-*/.tic_tac_toe_offline
+*/tic_tac_toe_offline
